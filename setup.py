@@ -6,7 +6,7 @@
 import sys
 
 if sys.version_info[0] >= 3:
-    print "WARNING: periodic_kdtree package has not been tested on Python 3"
+    print("WARNING: periodic_kdtree package has not been tested on Python 3")
 
 CLASSIFIERS = """\
 Development Status :: 3 - Alpha
@@ -33,7 +33,7 @@ if sys.platform == 'darwin':
         import numpy
         import scipy
     except ImportError:
-        print """
+        print ("""
 
 FATAL ERROR: NumPy and SciPy both need to be installed to install periodic_kdtree.
 Ordinarily, they would be installed automatically, but this seems to be
@@ -42,7 +42,7 @@ available for download.
 
 Please read the README.txt file for installation instructions.
 
-"""
+""")
         exit()
 
 setup(name="periodic_kdtree",
